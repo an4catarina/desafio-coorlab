@@ -220,7 +220,7 @@ export default {
 }
 
 .custom-container.output-container {
-  width: 30px; /* Set the desired width */
+  width: 30px;
 }
 .result-section {
   display: flex;
@@ -229,7 +229,7 @@ export default {
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 10px;
-  width: 400px; /* Adjust width to fill available space */
+  width: 400px;
 }
 
 .result-container {
