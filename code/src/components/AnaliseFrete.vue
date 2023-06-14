@@ -2,6 +2,7 @@
   <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="custom-container input-container">
       <div class="col-md-40 d-flex flex-column align-items-center justify-content-center">
+        <img src="@/assets/logo.png" alt="Logo" class="logo">
         <div class="form-group">
           <div class="input-label-container">
             <label for="city" class="input-label">
@@ -39,7 +40,7 @@
               <p><strong>Tempo estimado:</strong> {{ bestPrice.lead_time }}</p>
             </div>
             <div class="result-price">
-              <p><strong>Price</strong></p>
+              <p><strong>Preço</strong></p>
               <p>R${{ calculateTotalCost(bestPrice).toFixed(2) }}</p>
             </div>
           </div>
@@ -53,7 +54,7 @@
               <p><strong>Tempo estimado:</strong> {{ fastest.lead_time }}</p>
             </div>
             <div class="result-price">
-              <p><strong>Valor</strong></p>
+              <p><strong>Preço</strong></p>
               <p>R${{ calculateTotalCost(fastest).toFixed(2) }}</p>
             </div>
           </div>
@@ -62,7 +63,7 @@
           </div>
         </div>
         <div v-else>
-          <p>Nenhum dado seleciondo</p>
+          <p>Nenhum dado selecionado</p>
         </div>
         <div v-if="showWarning" class="error-message">
           Preencha todos os campos.
@@ -173,8 +174,6 @@ export default {
   },
 };
 </script>
-
-
 
 <style>
 .select-destination {
@@ -315,5 +314,11 @@ export default {
   color: red;
   margin-top: 10px;
   font-size: 14px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
 }
 </style>
