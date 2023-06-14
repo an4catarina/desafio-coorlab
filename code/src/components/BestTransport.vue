@@ -5,38 +5,25 @@
         <b>{{ appName }}</b>
       </b-navbar-brand>
     </b-navbar>
+    <h3></h3>
+    <AnaliseFrete />
   </div>
-
 </template>
 
 <script>
-import {
-  BNavbar,
-  BNavbarBrand,
-} from 'bootstrap-vue'
+import { BNavbar, BNavbarBrand } from 'bootstrap-vue'
+import AnaliseFrete from './AnaliseFrete.vue'
 
 export default {
   components: {
     BNavbar,
     BNavbarBrand,
+    AnaliseFrete,
   },
   data() {
-    const appName = ''
-
     return {
-      appName,
+      appName: 'Melhor Frete',
     }
-  },
-  created() {
-    // Implemente aqui o GET dos dados da API REST
-    // para que isso ocorra na inicialização da pagina
-    this.appName = 'Melhor Frete'
-  },
-  methods: {
-    // Implemente aqui os metodos utilizados na pagina
-    methodFoo() {
-      console.log(this.appName)
-    },
   },
 }
 </script>
